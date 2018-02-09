@@ -1,9 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/catImage"
+        android:layout_width="90dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/horseImage"
+        android:src="@drawable/cat" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/catTextView"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/horseTextView"
+        android:layout_toEndOf="@+id/catImage"
+        android:layout_toRightOf="@+id/catImage"
         android:gravity="center_horizontal"
-        android:text="Start editing this file"/>
+        android:text="
+Cats are similar in anatomy to the other felids, with a strong flexible body, quick reflexes, sharp retractable claws, and teeth adapted to killing small prey."
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/dogImage"
+        android:layout_width="90dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/catImage"
+        android:src="@drawable/dog" />
+
+    <TextView
+        android:id="@+id/dogTextView"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/catImage"
+        android:layout_toEndOf="@+id/dogImage"
+        android:layout_toRightOf="@+id/dogImage"
+        android:gravity="center_horizontal"
+        android:text="
+The origin of the domestic dog is not clear. It is known that the dog was the first domesticated species."
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/birdImage"
+        android:layout_width="90dp"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/dogImage"
+        android:src="@drawable/bird" />
+
+    <TextView
+        android:id="@+id/birdTextView"
+        android:layout_width="160dp"
+        android:layout_height="110dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/dogTextView"
+        android:layout_toEndOf="@+id/birdImage"
+        android:layout_toRightOf="@+id/birdImage"
+        android:gravity="center_horizontal"
+        android:text="
+        Some birds, especially corvids and parrots, are among the most intelligent animals; several bird species make and use tools, and many social species pass on knowledge across generations, which is considered a form of culture. "
+        android:visibility="invisible" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_below="@+id/birdTextView"
+    android:gravity="center_horizontal">
+    <ImageButton
+        android:id="@+id/ColorRedImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/lionImage"
+        android:background="@android:color/holo_red_dark" />
+
+    <ImageButton
+        android:id="@+id/ColorGreenImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/lionImage"
+        android:layout_toEndOf="@+id/ColorRedImage"
+        android:layout_toRightOf="@+id/ColorRedImage"
+        android:background="@android:color/holo_green_light" />
+
+    <ImageButton
+        android:id="@+id/ColorBlueImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/lionImage"
+        android:layout_toEndOf="@+id/ColorGreenImage"
+        android:layout_toRightOf="@+id/ColorGreenImage"
+        android:background="@android:color/holo_blue_bright" />
+
+    <ImageButton
+        android:id="@+id/ColorOrangeImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/lionImage"
+        android:layout_toEndOf="@+id/ColorBlueImage"
+        android:layout_toRightOf="@+id/ColorBlueImage"
+        android:background="@android:color/holo_orange_dark" />
+    <ImageButton
+        android:id="@+id/ColorPurpleImage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/lionImage"
+        android:layout_toEndOf="@+id/ColorOrangeImage"
+        android:layout_toRightOf="@+id/ColorOrangeImage"
+        android:background="@android:color/holo_purple" />
+</LinearLayout>
 </RelativeLayout>
