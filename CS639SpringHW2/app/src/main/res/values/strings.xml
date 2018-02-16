@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">CS639SpringHW2</string>
+
+    <string name="dog_description">"The origin of the domestic dog is not clear. It is known that the dog was the first domesticated species."</string>
+    <string name="cat_description">"Cats are similar in anatomy to the other felids, with a strong flexible body, quick reflexes, sharp retractable claws, and teeth adapted to killing small prey."</string>
+    <string name="bird_description">"Some birds, especially corvids and parrots, are among the most intelligent animals; several bird species make and use tools, and many social species pass on knowledge across generations, which is considered a form of culture. "</string>
+
+    <string name="image_not_selected">Please Select Any Image</string>
+    <string name="desc_not_added">Please Add the description</string>
+    <string name="no_desc_to_show">No Description to show</string>
+    <string name="no_desc_to_delete">No Description to delete</string>
+
+    <string name="add_button">Add</string>
+    <string name="next_button">Next</string>
+    <string name="delete_button">Delete</string>
 </resources>
